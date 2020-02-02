@@ -1,0 +1,58 @@
+<br>
+<h3 style="color: white">Upload Book</h3>
+<div style="color: aqua;">
+    <label *ngIf="message!= ''" class="alert alert-info">{{message}}</label>
+    <form (ngSubmit)="handlebook(myform)" #myform="ngForm">
+        <div>
+            <label>Enter Book name</label>
+            <input type="text" name="title" ngModel class="form-control" style="width: 300px;" required>
+        </div>
+
+        <div>
+            <label>Enter author</label>
+            <input type="text" name="author" ngModel class="form-control" style="width: 300px;" required>
+        </div>
+
+        <div>
+            <label>Enter publisher</label>
+            <input type="text" name="publisher" ngModel class="form-control" style="width: 300px;" required>
+        </div>
+
+        <div>
+            <label>Enter language</label>
+            <input type="text" name="language" ngModel class="form-control" style="width: 300px;" required>
+        </div>
+
+        <div>
+            <label>Enter category</label>
+            <input type="text" name="category" ngModel class="form-control" style="width: 300px;" required>
+        </div>
+
+        <div>
+            <br>
+            <input type="submit" class="btn" style="width: 150px;">
+            <input type="reset" class="btn" style="width: 150px;">
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+<!-- <div style="text-align: center;">
+
+    Enter Book name: <input type="text" name="title" [(ngModel)]="title" required><br>
+    Eneter Author: <input type="text" name="author" [(ngModel)]="author" required><br>
+    Enter publisher: <input type="text" name="publisher" [(ngModel)]="publisher" required><br>
+    Enter language: <input type="text" name="language" [(ngModel)]="language" required><br>
+    Enter category: <input type="text" name="category" [(ngModel)]="category" required><br>
+   
+
+    <button (click) = handlebook() >Upload</button>
+
+
+
+</div> -->

@@ -1,0 +1,38 @@
+
+<br>
+<h2 style="color: blueviolet; text-align: center; border:solid cyan 1mm; background-color: darkgrey;" >list of available books</h2><br><hr>
+
+
+
+<div class="container">
+<table class="table" style="background-color: white;">
+
+<thead style="border: solid black 1mm;">
+    <tr>
+        <th>title</th>
+        <th>author</th>
+        <th>publisher</th>
+        <th>language</th>
+        <th>category</th>
+        <th>Activity</th>
+    </tr>
+</thead>
+
+<tbody style="border: solid black 1mm;">
+    <tr *ngFor="let book of books">
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.publisher}}</td>
+        <td>{{book.language}}</td>
+        <td>{{book.language}}</td>
+        <td><button (click)="requestbook(book)" class="btn btn-success">Request</button>
+        
+    </tr>
+    
+</tbody>
+
+
+
+</table>
+</div>
+

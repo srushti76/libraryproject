@@ -1,0 +1,99 @@
+
+<div style="float: right;">
+    
+    <label *ngIf="message!= ''" class="alert alert-info">{{message}}</label>
+
+    <div class="box">
+      
+        <h3 style="color: cornsilk;">Log In</h3><br>
+    <form (ngSubmit)="login(myform)" #myform="ngForm">
+        <div>
+            <label>Enter email</label>
+            <input type="text" name="email" ngModel class="form-control" style="width: 300px;">
+        </div>
+
+        <div>
+            <label>Enter Password</label>
+            <input type="password" name="password" ngModel class="form-control" style="width: 300px;">
+        </div><br>
+
+        <div>
+            <input type="submit" class="btn" style="width: 140px;"> 
+            <input type="reset" class="btn" style="width: 140px;">
+        </div><br>
+
+        <div style="float: right;">
+            <strong><a routerLink="/register">New User? register</a></strong>
+            </div>
+
+    </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h4 *ngIf='invalidLogin'>{{errorMessage}}</h4>
+
+<div>
+User Name : <input type ="text" name ="username" [(ngModel)]="username"><br>
+Password : <input type="password" name="password" [(ngModel)]="password">
+
+<button (click) = handleLogin() >Login</button>
+ -->
+
+
+
+<!-- 
+<div style="float: right;">
+<a routerLink="/register">New User? register</a>
+</div> -->
+
+
+
+
+
+<!-- >
+<div style="float: right;">
+    <h3 style="color: cornsilk;">Log In</h3>
+    <label *ngIf="message!= ''" class="alert alert-info">{{message}}</label>
+    <form (ngSubmit)="login(myform)" #myform="ngForm">
+        <div>
+            <label>Enter email</label>
+            <input type="text" name="email" ngModel class="form-control" style="width: 300px;">
+        </div>
+
+        <div>
+            <label>Enter Password</label>
+            <input type="password" name="password" ngModel class="form-control" style="width: 300px;">
+        </div><br>
+
+        <div>
+            <input type="submit" class="btn" style="width: 140px;"> 
+            <input type="reset" class="btn" style="width: 140px;">
+        </div><br>
+
+        <div style="float: right;">
+            <strong><a routerLink="/register">New User? register</a></strong>
+            </div>
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+ -->

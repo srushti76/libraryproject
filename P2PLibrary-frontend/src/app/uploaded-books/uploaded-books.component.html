@@ -1,0 +1,34 @@
+<br>
+<h2 style="text-align: center; color: chartreuse;">List of uploaded books</h2><br><hr>
+
+
+
+<div class="container">
+<table class="table" style="background-color: white;">
+
+<thead style="border: solid black 1mm;">
+    <tr>
+        <th>title</th>
+        <th>author</th>
+        <th>publisher</th>
+        <th>language</th>
+        <th>category</th>
+        <th>Delete</th>
+    </tr>
+</thead>
+
+<tbody style="border: solid black 1mm;" >
+    <tr *ngFor="let book of Upbooks">
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.publisher}}</td>
+        <td>{{book.language}}</td>
+        <td>{{book.category}}</td>
+        <td><button (click)="deleteBook(book)" class="btn btn-warning">Withdraw Book</button>
+      
+    
+</tbody>
+
+
+</table>
+</div>
